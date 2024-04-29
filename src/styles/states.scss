@@ -1,0 +1,75 @@
+@import "./base/map";
+
+.header--responsive {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(map-get($Neutral, VeryDarkBlue), 0.9);
+
+    .menu {
+        display: flex;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+
+        &_logo {
+            border-bottom: 1px solid white;
+            display: flex;
+            align-items: center;
+
+            width: 100%;
+            justify-content: space-between;
+            padding-bottom: 40px;
+
+            &_image {
+                filter: brightness(0) invert(100%);
+                width: 220px;
+            }
+
+            .menu_close {
+                display: block;
+                width: 20px;
+                cursor: pointer;
+            }
+        }
+
+        &_items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            width: 100%;
+            justify-content: space-around;
+
+            .menu_link {
+                border-bottom: 1px solid #ffffffad;
+                font-weight: 600;
+                color: white;
+                display: block;
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                font-size: 24px;
+                padding: 20px 0;
+            }
+
+            .menu_login{
+                background-color: transparent;
+                border: 3px solid white;
+            }
+        }
+
+        &_social {
+            display: flex;
+            flex: 1;
+            align-items: end;
+            gap: 40px;
+        }
+
+        &_hamburguer {
+            display: none;
+        }
+    }
+
+}
