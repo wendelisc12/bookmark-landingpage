@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_link {
+  margin-right: 30px;
+  text-transform: uppercase;
+  color: hsl(229, 31%, 21%);
+  transition: all 400ms;
+}
+.menu_link:hover {
+  color: hsl(0, 94%, 66%);
+}
+.menu_login {
+  padding: 11px 30px;
+  box-shadow: 5px 5px 9px rgba(54, 54, 54, 0.3);
+  border-radius: 5px;
+  background-color: hsl(0, 94%, 66%);
+  border: 1px solid hsl(0, 94%, 66%);
+  color: white;
+}
+.menu_login:hover {
+  background-color: white;
+  border: 1px solid hsl(0, 94%, 66%);
+}
+.menu_hamburguer {
+  display: none;
+  cursor: pointer;
+}
+.menu .menu_social {
+  display: none;
+}
+.menu_close {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .menu_items {
+    display: none;
+  }
+  .menu_hamburguer {
+    display: block;
+  }
+}
+.header--responsive {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(37, 43, 70, 0.9);
+}
+.header--responsive .menu {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.header--responsive .menu_logo {
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.header--responsive .menu_logo_image {
+  filter: brightness(0) invert(100%);
+  width: 220px;
+}
+.header--responsive .menu_logo .menu_close {
+  display: block;
+  width: 20px;
+  cursor: pointer;
+}
+.header--responsive .menu_items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  justify-content: space-around;
+}
+.header--responsive .menu_items .menu_link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6784313725);
+  font-weight: 600;
+  color: white;
+  display: block;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0;
+}
+.header--responsive .menu_items .menu_login {
+  background-color: transparent;
+  border: 3px solid white;
+}
+.header--responsive .menu_social {
+  display: flex;
+  flex: 1;
+  align-items: end;
+  gap: 40px;
+}
+.header--responsive .menu_hamburguer {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
