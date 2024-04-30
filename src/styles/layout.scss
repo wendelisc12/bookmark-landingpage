@@ -9,3 +9,11 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
+main{
+    display: flex;
+    background: url("../images/bg-hero1.svg") no-repeat right bottom;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}

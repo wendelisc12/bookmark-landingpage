@@ -21,6 +21,14 @@ nav {
   justify-content: space-between;
 }
 
+main {
+  display: flex;
+  background: url("../images/bg-hero1.svg") no-repeat right bottom;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
 .menu_link {
   margin-right: 30px;
   text-transform: uppercase;
@@ -51,6 +59,63 @@ nav {
 }
 .menu_close {
   display: none;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+.main_texts {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.main_titulo {
+  font-weight: 600;
+  font-size: 2.3em;
+  color: #252525;
+}
+.main_descricao {
+  color: #7a7a7a;
+}
+.main_buttons {
+  display: flex;
+  gap: 20px;
+}
+.main_buttons_chrome, .main_buttons_firefox {
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0px 5px 5px rgba(27, 27, 27, 0.231372549);
+  transition: all 400ms;
+}
+.main_buttons_firefox {
+  color: #252525;
+  border: 2px solid transparent;
+}
+.main_buttons_firefox:hover {
+  border: 2px solid #252525;
+  background-color: white;
+}
+.main_buttons_chrome {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: 2px solid hsl(231, 69%, 60%);
+}
+.main_buttons_chrome:hover {
+  border: 2px solid hsl(231, 69%, 60%);
+  background-color: transparent;
+  color: hsl(231, 69%, 60%);
+}
+.main_images {
+  width: 60%;
 }
 
 @media screen and (max-width: 767px) {
