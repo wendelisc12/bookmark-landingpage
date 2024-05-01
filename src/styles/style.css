@@ -23,15 +23,21 @@ nav {
 
 main {
   display: flex;
-  background: url("../images/bg-hero.svg") no-repeat right bottom;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: url("../images/bg-hero.svg") no-repeat right bottom;
   height: 70vh;
+  max-height: 450px;
+}
+
+section {
+  margin: 50px 0;
 }
 
 @media screen and (max-width: 767px) {
   main {
     background-position: top 100px right -150px;
+    max-height: 750px;
   }
 }
 .menu_link {
@@ -86,7 +92,7 @@ main {
   text-transform: capitalize;
 }
 .main_descricao {
-  color: #7a7a7a;
+  color: hsl(229, 8%, 60%);
 }
 .main_buttons {
   display: flex;
@@ -122,6 +128,46 @@ main {
 }
 .main_images {
   width: 60%;
+}
+
+.features {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features_header {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.features_title {
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 500;
+  color: #252525;
+}
+.features_descricao {
+  color: hsl(229, 8%, 60%);
+  width: 580px;
+}
+.features_tabs {
+  width: 800px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #c9c9c9;
+}
+.features_link {
+  width: 250px;
+  padding: 20px;
+  color: #3f3f3f;
+  font-weight: 500;
+  transition: all 400ms;
+  text-transform: capitalize;
+}
+.features_link:hover {
+  color: hsl(0, 94%, 66%);
 }
 
 @media screen and (max-width: 767px) {
@@ -207,6 +253,12 @@ main {
 }
 .header--responsive .menu_hamburguer {
   display: none;
+}
+
+.features_link--active {
+  border-bottom: 4px solid hsl(0, 94%, 66%);
+  font-weight: 600;
+  color: #252525;
 }
 
 /*# sourceMappingURL=style.css.map */

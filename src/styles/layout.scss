@@ -1,3 +1,5 @@
+@import "base/map";
+
 header{
     width: 80%;
     margin: 0 auto;
@@ -11,15 +13,19 @@ nav{
 }
 
 main{
-    display: flex;
+    @include alignCenter;
     background: url("../images/bg-hero.svg") no-repeat right bottom;
-    justify-content: center;
-    align-items: center;
     height: 70vh;
+    max-height: 450px;
+}
+
+section{
+    margin: 50px 0;
 }
 
 @media screen and (max-width: 767px) {
     main{
         background-position: top 100px right -150px;
+        max-height: 750px;
     }
 }

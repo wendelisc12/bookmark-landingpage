@@ -73,3 +73,11 @@
     }
 
 }
+
+.features{
+    &_link--active{
+        border-bottom: 4px solid map-get($Primary, SoftRed );
+        font-weight: 600;
+        color: #252525;
+    }
+}

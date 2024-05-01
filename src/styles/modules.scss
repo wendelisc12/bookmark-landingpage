@@ -63,7 +63,7 @@
     }
 
     &_descricao{
-        color: #7a7a7a;
+        color: map-get($Neutral, GrayshBlue );
     }
 
     &_buttons{
@@ -105,6 +105,47 @@
 
     &_images{
         width: 60%;
+    }
+}
+
+.features{
+    text-align: center;
+    @include alignCenter;
+
+    &_header{
+        width: 80%;
+        @include alignCenter;
+        flex-direction: column;
+    }
+
+    &_title{
+        margin-bottom: 20px;
+        font-size: 2em;
+        font-weight: 500;
+        color: #252525;
+    }
+
+    &_descricao{
+        color: map-get($Neutral, GrayshBlue );
+        width: 580px;
+    }
+
+    &_tabs{
+        width: 800px;
+        padding-bottom: 0;
+        border-bottom: 1px solid #c9c9c9;
+    }
+    &_link{
+        width: 250px;
+        padding: 20px;
+        color: #3f3f3f;
+        font-weight: 500;
+        transition: all 400ms;
+        text-transform: capitalize;
+
+        &:hover{
+            color: map-get($Primary, SoftRed );
+        }
     }
 }
 

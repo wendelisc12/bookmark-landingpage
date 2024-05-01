@@ -6,5 +6,10 @@ $Primary: (
 $Neutral:(
     "GrayshBlue": hsl(229, 8%, 60%),
     "VeryDarkBlue": hsl(229, 31%, 21%)
-)
+);
 
+@mixin alignCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
