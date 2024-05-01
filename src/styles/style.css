@@ -23,12 +23,17 @@ nav {
 
 main {
   display: flex;
-  background: url("../images/bg-hero1.svg") no-repeat right bottom;
+  background: url("../images/bg-hero.svg") no-repeat right bottom;
   justify-content: center;
   align-items: center;
   height: 70vh;
 }
 
+@media screen and (max-width: 767px) {
+  main {
+    background-position: top 100px right -150px;
+  }
+}
 .menu_link {
   margin-right: 30px;
   text-transform: uppercase;
@@ -78,6 +83,7 @@ main {
   font-weight: 600;
   font-size: 2.3em;
   color: #252525;
+  text-transform: capitalize;
 }
 .main_descricao {
   color: #7a7a7a;
@@ -124,6 +130,20 @@ main {
   }
   .menu_hamburguer {
     display: block;
+  }
+  .main {
+    flex-direction: column-reverse;
+  }
+  .main_texts {
+    width: 100%;
+    text-align: center;
+  }
+  .main_image {
+    display: flex;
+    justify-content: center;
+  }
+  .main_image_element {
+    width: 360px;
   }
 }
 .header--responsive {

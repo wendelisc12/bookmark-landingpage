@@ -12,8 +12,14 @@ nav{
 
 main{
     display: flex;
-    background: url("../images/bg-hero1.svg") no-repeat right bottom;
+    background: url("../images/bg-hero.svg") no-repeat right bottom;
     justify-content: center;
     align-items: center;
     height: 70vh;
+}
+
+@media screen and (max-width: 767px) {
+    main{
+        background-position: top 100px right -150px;
+    }
 }

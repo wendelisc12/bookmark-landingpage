@@ -59,6 +59,7 @@
         font-weight: 600;
         font-size: 2.3em;
         color: #252525;
+        text-transform: capitalize;
     }
 
     &_descricao{
@@ -117,5 +118,25 @@
         &_hamburguer{
             display: block;
         }
+    }
+
+    .main{
+        flex-direction: column-reverse;
+
+        &_texts{
+            width: 100%;
+            text-align: center;
+        }
+
+        &_image{
+            display: flex;
+            justify-content: center;
+            &_element{
+                width: 360px;
+            }
+        }
+
+
+        
     }
 }
