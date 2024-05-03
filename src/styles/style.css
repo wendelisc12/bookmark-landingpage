@@ -247,6 +247,12 @@ section {
   height: 300px;
   overflow: hidden;
 }
+.extensions_browsers_box_texts {
+  text-align: center;
+}
+.extensions_browsers_box_descricao {
+  color: hsl(229, 8%, 60%);
+}
 .extensions_browsers_firefox {
   margin-top: 150px;
 }

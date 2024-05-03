@@ -223,6 +223,14 @@
             width: 250px;
             height: 300px;
             overflow: hidden;
+
+            &_texts{
+                text-align: center;
+            }
+
+            &_descricao{
+                color: map-get($Neutral, GrayshBlue );
+            }
         }
 
         &_firefox{
