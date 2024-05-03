@@ -191,6 +191,68 @@
 
 }
 
+.extensions{
+    &_texts{
+        text-align: center;
+    }
+
+    &_title{
+        margin-bottom: 10px;
+        font-size: 2em;
+        color: #252525;
+    }
+
+    &_descricao{
+        width: 420px;
+        margin: 0 auto;
+        color: map-get($Neutral, GrayshBlue );
+    }
+
+    &_browsers{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 30px;
+        &_box{
+            box-shadow: 0 5px 10px #7c7c7c4d;
+            border-radius: 10px;
+            padding: 20px 0;
+            @include alignCenter;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 250px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        &_firefox{
+            margin-top: 150px;
+        }
+
+        &_opera{
+            margin-top: 300px;
+        }
+
+        &_button{
+            width: 200px;
+            height: 45px;
+            border-radius: 8px;
+            border: 0;
+            background-color: map-get($Primary, SoftBlue );
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            border: 2px solid map-get($Primary, SoftBlue );
+            transition: background 400ms ease-in;
+
+            &:hover{
+                background-color: transparent;
+                color: map-get($Primary, SoftBlue );
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 767px){
     .menu{
 
@@ -246,6 +308,24 @@
 
         &_selected_descricao{
             text-align: center;
+        }
+    }
+
+    .extensions{
+        &_descricao{
+            width: 350px;
+        }
+        &_browsers{
+            flex-direction: column;
+            align-items: center;
+
+            &_firefox{
+                margin-top: 0;
+            }
+    
+            &_opera{
+                margin-top: 0;
+            }
         }
     }
 }
