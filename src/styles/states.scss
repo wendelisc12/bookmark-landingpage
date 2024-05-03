@@ -80,4 +80,11 @@
         font-weight: 600;
         color: #252525;
     }
+
+    &_selected--active{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
 }

@@ -108,9 +108,9 @@
     }
 }
 
-.features{
-    text-align: center;
+.features{  
     @include alignCenter;
+    flex-direction: column;
 
     &_header{
         width: 80%;
@@ -128,12 +128,14 @@
     &_descricao{
         color: map-get($Neutral, GrayshBlue );
         width: 580px;
+        text-align: center;
     }
 
     &_tabs{
         width: 800px;
         padding-bottom: 0;
         border-bottom: 1px solid #c9c9c9;
+        text-align: center;
     }
     &_link{
         width: 250px;
@@ -142,11 +144,50 @@
         font-weight: 500;
         transition: all 400ms;
         text-transform: capitalize;
-
+        border: 4px solid transparent;
         &:hover{
             color: map-get($Primary, SoftRed );
         }
     }
+
+    &_selected{
+        width: 100%;
+        height: 500px;
+        background: url("../images/bg-hero-espelhado.svg") no-repeat bottom left;
+        @include alignCenter;
+        padding:70px 0;
+
+        &_texts{
+            padding: 20px;
+        }
+
+        &_title{
+            color: #252525;
+            font-size: 2em;
+            text-transform: capitalize;
+        }
+        &_descricao{
+            color: map-get($Neutral, GrayshBlue );
+            margin: 20px 0;
+            width: 420px;
+        }
+        &_button{
+            background-color: map-get($Primary, SoftBlue );
+            color: white;
+            border: 0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 400ms;
+            text-transform: capitalize;
+            &:hover{
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 767px){
