@@ -127,7 +127,7 @@
 
     &_descricao{
         color: map-get($Neutral, GrayshBlue );
-        width: 580px;
+        max-width: 580px;
         text-align: center;
     }
 
@@ -158,7 +158,7 @@
         padding:70px 0;
 
         &_texts{
-            padding: 20px;
+            padding: 20px 0;
         }
 
         &_title{
@@ -169,7 +169,8 @@
         &_descricao{
             color: map-get($Neutral, GrayshBlue );
             margin: 20px 0;
-            width: 420px;
+            min-width: 350px;
+            max-width: 420px;
         }
         &_button{
             background-color: map-get($Primary, SoftBlue );
@@ -217,8 +218,34 @@
                 width: 360px;
             }
         }
+    }
 
+    .features{
+        &_tabs{
+            flex-direction: column;
+            padding: 20px;
+            border: 0;
+            margin-bottom: 60px;
+        }
+        &_link{
+            border-bottom: 1px solid #c9c9c9;
+        }
 
-        
+        &_selected{
+            background: url('../images/bg-hero-mobile-espelhado.svg') no-repeat top 50px left -140px;
+        }
+
+        &_selected_img{
+            width: 350px;
+        }
+
+        &_selected_texts{
+            text-align: center;
+            padding: 50px;
+        }
+
+        &_selected_descricao{
+            text-align: center;
+        }
     }
 }

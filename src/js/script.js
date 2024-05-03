@@ -27,7 +27,7 @@ $("document").ready(() => {
             $(".features_selected").html($(
                 `<div class="features_selected--active">
                     <div>
-                        <img src="images/illustration-features-tab-2.svg" alt="">
+                        <img src="images/illustration-features-tab-2.svg" alt="" class="features_selected_img" >
                     </div>
                     <div class="features_selected_texts">
                         <h1 class="features_selected_title">intelligent search</h1>
@@ -41,7 +41,7 @@ $("document").ready(() => {
                 `
                 <div class="features_selected--active">
                     <div>
-                        <img src="images/illustration-features-tab-3.svg" alt="">
+                        <img src="images/illustration-features-tab-3.svg" alt="" class="features_selected_img" >
                     </div>
                     <div class="features_selected_texts">
                         <h1 class="features_selected_title">share your bookmarks    </h1>
@@ -56,7 +56,7 @@ $("document").ready(() => {
                 `
                 <div class="features_selected--active">
                     <div>
-                        <img src="images/illustration-features-tab-1.svg" alt="">
+                        <img src="images/illustration-features-tab-1.svg" alt="" class="features_selected_img" >
                     </div>
                     <div class="features_selected_texts">
                         <h1 class="features_selected_title">bookmark in one click</h1>

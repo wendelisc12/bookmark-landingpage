@@ -5,6 +5,10 @@
   font-family: "Rubik", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -151,7 +155,7 @@ section {
 }
 .features_descricao {
   color: hsl(229, 8%, 60%);
-  width: 580px;
+  max-width: 580px;
   text-align: center;
 }
 .features_tabs {
@@ -182,7 +186,7 @@ section {
   padding: 70px 0;
 }
 .features_selected_texts {
-  padding: 20px;
+  padding: 20px 0;
 }
 .features_selected_title {
   color: #252525;
@@ -192,7 +196,8 @@ section {
 .features_selected_descricao {
   color: hsl(229, 8%, 60%);
   margin: 20px 0;
-  width: 420px;
+  min-width: 350px;
+  max-width: 420px;
 }
 .features_selected_button {
   background-color: hsl(231, 69%, 60%);
@@ -230,6 +235,28 @@ section {
   }
   .main_image_element {
     width: 360px;
+  }
+  .features_tabs {
+    flex-direction: column;
+    padding: 20px;
+    border: 0;
+    margin-bottom: 60px;
+  }
+  .features_link {
+    border-bottom: 1px solid #c9c9c9;
+  }
+  .features_selected {
+    background: url("../images/bg-hero-mobile-espelhado.svg") no-repeat top 50px left -140px;
+  }
+  .features_selected_img {
+    width: 350px;
+  }
+  .features_selected_texts {
+    text-align: center;
+    padding: 50px;
+  }
+  .features_selected_descricao {
+    text-align: center;
   }
 }
 .header--responsive {
@@ -305,6 +332,12 @@ section {
   align-items: center;
   justify-content: space-between;
   width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+  .features_selected--active {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -88,3 +88,11 @@
         width: 80%;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .features{
+        &_selected--active{
+            flex-direction: column;
+        }
+    }
+}
