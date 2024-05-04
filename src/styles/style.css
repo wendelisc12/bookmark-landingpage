@@ -277,6 +277,12 @@ section {
   color: hsl(231, 69%, 60%);
 }
 
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .questions_header {
   display: flex;
   align-items: center;
@@ -326,6 +332,22 @@ section {
 }
 .questions_accordeons_content_text {
   line-height: 30px;
+}
+.questions_button {
+  background-color: hsl(231, 69%, 60%);
+  color: white;
+  border: 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 400ms;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+.questions_button:hover {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 767px) {

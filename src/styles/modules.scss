@@ -257,6 +257,8 @@
 }
 
 .questions{
+    @include alignCenter;
+    flex-direction: column;
 
     &_header{
        @include alignCenter;
@@ -311,8 +313,23 @@
                 line-height: 30px;
             }
         }
+    }
 
-
+    &_button{
+        background-color: map-get($Primary, SoftBlue );
+        color: white;
+        border: 0;
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 400ms;
+        text-transform: capitalize;
+        margin-top: 40px;
+        &:hover{
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+        }
     }
 }
 
