@@ -384,6 +384,12 @@ section {
   .extensions_browsers_opera {
     margin-top: 0;
   }
+  .questions_descricao {
+    width: 80%;
+  }
+  .questions_accordeons {
+    width: 90%;
+  }
 }
 .header--responsive {
   position: fixed;
