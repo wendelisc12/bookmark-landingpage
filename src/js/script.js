@@ -68,4 +68,14 @@ $("document").ready(() => {
             ).css("display", "none").fadeIn())
         }
     })
+
+    $(".questions_accordeons_body").click(function(){
+        var arrow = $(this).find(".questions_arrow")
+        arrow.toggleClass("open")
+
+        var content = $(this).find('.questions_accordeons_content');
+        content.slideToggle();
+
+
+    })
 })

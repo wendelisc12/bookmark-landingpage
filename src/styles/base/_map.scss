@@ -4,7 +4,7 @@ $Primary: (
 );
 
 $Neutral:(
-    "GrayshBlue": hsl(229, 8%, 60%),
+    "GrayshBlue": hsl(231, 5%, 51%),
     "VeryDarkBlue": hsl(229, 31%, 21%)
 );
 
@@ -12,4 +12,11 @@ $Neutral:(
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin title{
+    color: #252525;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 2em;
 }
