@@ -333,6 +333,100 @@
     }
 }
 
+
+.footer{
+    background-color: map-get($Primary, SoftBlue );
+    padding-top: 70px;
+    &_header{
+        @include alignCenter;
+        flex-direction: column;
+
+        &_texts{
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        &_subtitle{
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+
+    &_contact{
+        height: 50px;
+        display: flex;
+        gap: 10px;
+
+        &_input{
+            width: 320px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 0;
+        }
+
+        &_submit{
+            width: 120px;
+            border-radius: 8px;
+            border: 0;
+            background-color: map-get($Primary, SoftRed );
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+            transition: all 400ms;
+            border: 2px solid transparent;
+            font-weight: 500;
+
+            &:hover{
+                border-color: map-get($Primary, SoftRed );
+                color: map-get($Primary, SoftRed );
+                background-color: white;
+            }
+        }
+    }
+
+    &_box{
+        background-color: map-get($Neutral, VeryDarkBlue );
+        margin-top: 70px;
+        &_content{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &_logo{
+                filter: brightness(0) invert(100%);
+            }
+
+
+            &_nav{
+                display: flex;
+                gap: 50px;
+            }
+
+            &_link{
+                color: white;
+                text-transform: uppercase;
+                transition: all 400ms;
+
+                &:hover{
+                    color: map-get($Primary, SoftRed );
+                }
+            }
+
+            &_social{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+        }
+
+    }
+}
+
 @media screen and (max-width: 767px){
     .menu{
 
